@@ -1,0 +1,22 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "13:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: knex
+    versions:
+    - 0.21.16
+    - 0.21.17
+    - 0.21.18
+    - 0.95.1
+    - 0.95.2
+  - dependency-name: pg
+    versions:
+    - 8.5.1
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
